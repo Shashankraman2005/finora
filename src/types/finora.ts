@@ -98,7 +98,6 @@ export interface UserProfileData {
   name: string;
   email: string;
   age: number;
-  employmentType: 'Salaried' | 'Self-Employed' | 'Freelancer' | 'Business Owner' | 'Student';
   employmentType: 'Salaried' | 'Self-Employed' | 'Freelancer' | 'Business Owner' | 'Student' | 'Retired';
   monthlyIncome: number;
   otherIncome: number;
@@ -114,28 +113,6 @@ export interface UserProfileData {
   financialProfile?: UserFinancialProfile;
   investmentProfile?: UserInvestmentProfile;
 }
-
-export type ExpenseCategory =
-  | 'Food & Dining'
-  | 'Entertainment'
-  | 'Shopping'
-  | 'Travel'
-  | 'Transport'
-  | 'Bills'
-  | 'Education'
-  | 'Healthcare'
-  | 'Other';
-
-export type ExpenseSubcategory =
-  | 'Cafes' | 'Restaurants' | 'Food Delivery' | 'Groceries' | 'Fast Food'
-  | 'Movies' | 'Theatre' | 'Events' | 'Games' | 'Streaming'
-  | 'Clothing' | 'Electronics' | 'Online Shopping' | 'Personal Care'
-  | 'Flights' | 'Hotels' | 'Trips'
-  | 'Fuel' | 'Taxi' | 'Uber' | 'Public Transport' | 'Vehicle Maintenance'
-  | 'Electricity' | 'Internet' | 'Mobile' | 'Rent' | 'Utilities'
-  | 'Courses' | 'Books' | 'College' | 'Training'
-  | 'Medicine' | 'Doctor' | 'Hospital' | 'Fitness'
-  | 'General';
 
 export interface ExpenseTransaction {
   id: string;
